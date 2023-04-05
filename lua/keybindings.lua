@@ -80,9 +80,11 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
---coderunner
-map('n',"<C-A-n>","<CMD>lua require'CodeRunner'.run()<CR>",opt)
-map('n',"<C-Space>","<CMD>lua require'CodeRunner'.show()<CR>",opt)
-map('t',"<C-Space>","<C-\\><C-n><CMD>lua require'CodeRunner'.hide()<CR>",opt)
+--terminal
+map('n', '<leader>t', ':sp | terminal<CR>', opt)
+map('t', '<Esc>', '<C-\\><C-N>', opt)
+--exit
+map('n', '<leader>w', ':wq<CR>', opt)
+map('n', '<leader>q', ':q<CR>', opt)
 
 return pluginKeys

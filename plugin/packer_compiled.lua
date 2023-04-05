@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["CodeRunner.nvim"] = {
-    loaded = true,
-    path = "/home/kong/.local/share/nvim/site/pack/packer/start/CodeRunner.nvim",
-    url = "https://github.com/Pu-gayhub/CodeRunner.nvim"
-  },
   ["alpha-nvim"] = {
     loaded = true,
     path = "/home/kong/.local/share/nvim/site/pack/packer/start/alpha-nvim",
@@ -163,6 +158,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kong/.local/share/nvim/site/pack/packer/start/nui.nvim",
     url = "https://github.com/MunifTanjim/nui.nvim"
+  },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/kong/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,

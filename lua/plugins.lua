@@ -50,9 +50,10 @@ return require('packer').startup(function()
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
-  use 'Pu-gayhub/CodeRunner.nvim'
   use {
     'goolord/alpha-nvim',
     requires = { 'nvim-tree/nvim-web-devicons' }
   }
+  --autopairs
+  use 'windwp/nvim-autopairs'
 end)
